@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Spoke &amp; Cog — Back by Friday</title>
+  <meta name="description" content="Neighborhood bicycle repair. Transparent labor prices and easy drop-off booking.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body id="top">
+
+<header class="site-header">
+  <a class="logo" href="#top">S<span>&amp;</span>C.</a>
+
+  <span class="header-label">BICYCLE REPAIR / EST. 2026</span>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="#services">SERVICES</a>
+    <a href="#process">PROCESS</a>
+    <a class="nav-cta" href="#book">BOOK A DROP-OFF <span>↗</span></a>
+  </nav>
+
+  <button class="menu-toggle" id="menu-toggle"
+    type="button" aria-label="Open navigation"
+    aria-controls="mobile-nav" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+  <a href="#services">Services <span>↗</span></a>
+  <a href="#process">How it works <span>↗</span></a>
+  <a href="#book">Book a drop-off <span>↗</span></a>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-topline">
+      <span>INDEPENDENT BIKE WORKSHOP <i class="orange-dot"></i></span>
+      <span>YOUR LOCAL REPAIR SPECIALIST — 01/04</span>
+    </div>
+
+    <div class="hero-layout">
+      <div class="hero-copy">
+        <p class="eyebrow">LESS WAITING. MORE RIDING.</p>
+
+        <h1>Back<br>by Friday<span class="title-dot">.</span></h1>
+
+        <p class="hero-description">
+          Flat, squeaky, or skipping gears? We'll get your bike
+          back on the road. No surprises. Just good repairs.
+        </p>
+
+        <a class="circle-link" href="#services">
+          <span class="circle-arrow">↘</span>
+          <span>EXPLORE REPAIRS</span>
+        </a>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-frame">
+          <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1200&q=85"
+            alt="Bicycle ready for a ride"
+          >
+
+          <div class="image-label">
+            <span>BIKE REPAIR / 001</span>
+            <span>BUILT FOR THE ROAD.</span>
+          </div>
+
+          <a class="image-arrow" href="#services" aria-label="Explore services">↗</a>
+        </div>
+
+        <span class="vertical-caption">SERVICE / QUALITY / TRUST</span>
+        <span class="hero-index">001</span>
+      </div>
+    </div>
+
+    <div class="hero-bottomline">
+      <span>01 — EVERY BIKE DESERVES A SECOND WIND.</span>
+      <span>OPEN DAILY / 08:00 — 18:00</span>
+    </div>
+  </section>
+
+  <!-- REPAIR CALCULATOR -->
+  <section class="section repairs" id="repairs">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">01 / YOUR REPAIR TAG</p>
+        <h2>What's<br>the trouble<span class="orange-dot"></span></h2>
+      </div>
+
+      <p class="section-note">
+        Select the problems you're experiencing. We'll give you
+        an estimated labor cost before you bring your bike in.
+      </p>
+    </div>
+
+    <div class="repair-layout">
+      <div class="repair-options">
+        <div class="options-heading">
+          <span>SELECT YOUR REPAIRS</span>
+          <span>ESTIMATED LABOR / USD</span>
+        </div>
+
+        <label class="repair-option">
+          <input type="checkbox" data-price="25" data-name="Flat tire">
+          <span class="option-number">01</span>
+          <span class="option-copy">
+            <strong>Flat tire</strong>
+            <small>Patch or tube replacement</small>
+          </span>
+          <span class="option-price">$25</span>
+          <span class="option-check" aria-hidden="true"></span>
+        </label>
+
+        <label class="repair-option">
+          <input type="checkbox" data-price="45" data-name="Brake service">
+          <span class="option-number">02</span>
+          <span class="option-copy">
+            <strong>Brake service</strong>
+            <small>Squealing or soft brakes</small>
+          </span>
+          <span class="option-price">$45</span>
+          <span class="option-check" aria-hidden="true"></span>
+        </label>
+
+        <label class="repair-option">
+          <input type="checkbox" data-price="40" data-name="Gear adjustment">
+          <span class="option-number">03</span>
+          <span class="option-copy">
+            <strong>Gear adjustment</strong>
+            <small>Skipping or shifting issues</small>
+          </span>
+          <span class="option-price">$40</span>
+          <span class="option-check" aria-hidden="true"></span>
+        </label>
+
+        <label class="repair-option">
+          <input type="checkbox" data-price="30" data-name="Chain service">
+          <span class="option-number">04</span>
+          <span class="option-copy">
+            <strong>Chain service</strong>
+            <small>Cleaning and lubrication</small>
+          </span>
+          <span class="option-price">$30</span>
+          <span class="option-check" aria-hidden="true"></span>
+        </label>
+
+        <label class="repair-option">
+          <input type="checkbox" data-price="20" data-name="Wheel truing">
+          <span class="option-number">05</span>
+          <span class="option-copy">
+            <strong>Wheel truing</strong>
+            <small>Wobbly wheel correction</small>
+          </span>
+          <span class="option-price">$20</span>
+          <span class="option-check" aria-hidden="true"></span>
+        </label>
+      </div>
+
+      <aside class="repair-tag" aria-label="Your repair estimate">
+        <div class="tag-top">
+          <span>S&amp;C / REPAIR TICKET</span>
+          <span class="tag-status"><i class="orange-dot"></i> LIVE ESTIMATE</span>
+        </div>
+
+        <div class="tag-title">
+          <h3>Your<br>repair tag.</h3>
+          <span class="tag-icon">↘</span>
+        </div>
+
+        <p id="tag-empty" class="tag-empty">
+          Nothing selected yet. Choose a repair to start your estimate.
+        </p>
+
+        <ul id="tag-items" class="tag-items"></ul>
+
+        <div class="tag-total">
+          <span>ESTIMATED LABOR</span>
+          <strong id="total">$0.00</strong>
+        </div>
+
+        <p class="tag-note">
+          Parts are extra and charged at cost. We'll always ask before
+          using them. Final pricing is confirmed before work begins.
+        </p>
+
+        <a href="#book" class="button button-orange" id="tag-cta">
+          BOOK THIS REPAIR <span>↗</span>
+        </a>
+
+        <p class="tag-footnote">NO SURPRISES. JUST GOOD REPAIRS.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">02 / STRAIGHTFORWARD PRICING</p>
+        <h2>Good work.<br>Fair prices<span class="orange-dot"></span></h2>
+      </div>
+
+      <p class="section-note">
+        No confusing packages. Explore what's included in
+        each service. All prices cover labor only.
+      </p>
+    </div>
+
+    <div class="price-list">
+      <details>
+        <summary>
+          <span class="service-number">01</span>
+          <span class="service-name">Flat repair</span>
+          <span class="service-description">Tire &amp; tube</span>
+          <span class="service-price">$25</span>
+          <span class="service-toggle" aria-hidden="true"></span>
+        </summary>
+        <p>Tube patch or replacement, plus a tire inspection to identify what caused the puncture.</p>
+      </details>
+
+      <details>
+        <summary>
+          <span class="service-number">02</span>
+          <span class="service-name">Brake service</span>
+          <span class="service-description">Control &amp; safety</span>
+          <span class="service-price">$45</span>
+          <span class="service-toggle" aria-hidden="true"></span>
+        </summary>
+        <p>Brake pad inspection, cable checks, and brake alignment, followed by a safety check.</p>
+      </details>
+
+      <details>
+        <summary>
+          <span class="service-number">03</span>
+          <span class="service-name">Basic tune-up</span>
+          <span class="service-description">Everyday performance</span>
+          <span class="service-price">$65</span>
+          <span class="service-toggle" aria-hidden="true"></span>
+        </summary>
+        <p>Brake and gear adjustments, tire pressure checks, bolt checks, and a general safety inspection.</p>
+      </details>
+
+      <details>
+        <summary>
+          <span class="service-number">04</span>
+          <span class="service-name">Full overhaul</span>
+          <span class="service-description">The complete treatment</span>
+          <span class="service-price">$150</span>
+          <span class="service-toggle" aria-hidden="true"></span>
+        </summary>
+        <p>Everything in the basic tune-up, plus drivetrain cleaning, bearing inspection, and wheel truing.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section process" id="process">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">03 / THE PROCESS</p>
+        <h2>Simple as<br>one, two<span class="orange-dot"></span></h2>
+      </div>
+
+      <p class="section-note">
+        From drop-off to ride-away, we keep you informed
+        at every step. No guessing. No surprises.
+      </p>
+    </div>
+
+    <div class="process-grid">
+      <article class="process-card">
+        <span class="process-number">01 / DROP OFF</span>
+        <span class="process-symbol">↘</span>
+        <h3>Bring it in.</h3>
+        <p>Drop off your bike any day between 8 AM and 6 PM.</p>
+        <span class="process-label">YOUR FIRST STEP</span>
+      </article>
+
+      <article class="process-card">
+        <span class="process-number">02 / APPROVAL</span>
+        <span class="process-symbol">↗</span>
+        <h3>Know the cost.</h3>
+        <p>We'll contact you with a final quote. Work starts only after you approve.</p>
+        <span class="process-label">NO HIDDEN FEES</span>
+      </article>
+
+      <article class="process-card">
+        <span class="process-number">03 / REPAIR</span>
+        <span class="process-symbol">⚙</span>
+        <h3>We get to work.</h3>
+        <p>Our mechanics take care of the problem and check the repair.</p>
+        <span class="process-label">QUALITY FIRST</span>
+      </article>
+
+      <article class="process-card process-card-dark">
+        <span class="process-number">04 / RIDE AWAY</span>
+        <span class="process-symbol">↗</span>
+        <h3>Back on the road.</h3>
+        <p>We'll let you know when it's ready for pickup.</p>
+        <span class="process-label">READY BY FRIDAY*</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="section booking" id="book">
+    <div class="booking-layout">
+      <div class="booking-copy">
+        <p class="eyebrow">04 / LET'S GET YOU ROLLING</p>
+        <h2>Let's fix<br>that bike<span class="orange-dot"></span></h2>
+
+        <p>
+          Tell us a little about yourself and your bike.
+          We'll get in touch to confirm your drop-off.
+        </p>
+
+        <div class="booking-detail">
+          <span class="detail-icon">↗</span>
+          <div>
+            <strong>WALK-INS WELCOME</strong>
+            <span>Monday – Sunday / 8 AM – 6 PM</span>
+          </div>
+        </div>
+
+        <div class="booking-detail">
+          <span class="detail-icon">⌖</span>
+          <div>
+            <strong>FIND THE WORKSHOP</strong>
+            <span>12 Example Street — replace with your address</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="booking-form" id="book-form">
+        <div class="form-topline">
+          <span>DROP-OFF REQUEST</span>
+          <span>ALL FIELDS MARKED * REQUIRED</span>
+        </div>
+
+        <label for="name">YOUR NAME <span>*</span></label>
+        <input id="name" name="name" type="text"
+          placeholder="Enter your full name"
+          autocomplete="name" required>
+
+        <label for="phone">PHONE NUMBER <span>*</span></label>
+        <input id="phone" name="phone" type="tel"
+          placeholder="Enter your contact number"
+          autocomplete="tel" required>
+
+        <label for="bikeType">TYPE OF BIKE</label>
+        <select id="bikeType" name="bikeType">
+          <option value="">Select your bike type</option>
+          <option value="Road bike">Road bike</option>
+          <option value="Mountain bike">Mountain bike</option>
+          <option value="City bike">City bike</option>
+          <option value="Hybrid bike">Hybrid bike</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="notes">TELL US ABOUT THE PROBLEM</label>
+        <textarea id="notes" name="notes" rows="4"
+          placeholder="What's happening with your bike?"></textarea>
+
+        <button type="submit" class="button button-orange submit-button">
+          REQUEST DROP-OFF <span>↗</span>
+        </button>
+
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+
+        <p class="form-disclaimer">
+          DEMO FORM — CONNECT A BACKEND OR FORM SERVICE TO RECEIVE REAL REQUESTS.
+        </p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <a class="footer-logo" href="#top">S<span>&amp;</span>C.</a>
+
+  <p>INDEPENDENT BIKE REPAIR / OPEN DAILY 8–6</p>
+
+  <a class="back-to-top" href="#top">BACK TO TOP ↑</a>
+
+  <div class="footer-bottom">
+    <span>© 2026 SPOKE &amp; COG</span>
+    <span>LESS WAITING. MORE RIDING.</span>
+  </div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
